@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8CACC7AC-AD47-4C38-88B8-B6D620D3E195</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Unity-iPhone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7784771CDF5FAA503A66ED3FDF8E2DD6671265B9</key>
+		<string>https://bitbucket.org/anatomicalatlas/atlas-rv-anatomic-oficial.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ProjectBetaiOS2/Unity-iPhone.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7784771CDF5FAA503A66ED3FDF8E2DD6671265B9</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/anatomicalatlas/atlas-rv-anatomic-oficial.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7784771CDF5FAA503A66ED3FDF8E2DD6671265B9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7784771CDF5FAA503A66ED3FDF8E2DD6671265B9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Repositorio%20Atlas</string>
+		</dict>
+	</array>
+</dict>
+</plist>

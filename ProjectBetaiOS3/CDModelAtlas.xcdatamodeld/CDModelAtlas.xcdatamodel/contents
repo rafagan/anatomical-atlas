@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BoneSetCD" representedClassName="BoneSetCD" syncable="YES">
+        <attribute name="boneChildren" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="boneSetChildren" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descript" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idBoneSet" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="parentBoneSet" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="synonimous" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalBones" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="relatedQuestions" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BoneSetRelatedQuestions" inverseName="boneSetCD" inverseEntity="BoneSetRelatedQuestions" syncable="YES"/>
+    </entity>
+    <entity name="BoneSetRelatedQuestions" representedClassName="BoneSetRelatedQuestions" syncable="YES">
+        <attribute name="relatedQuestions" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="boneSetCD" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BoneSetCD" inverseName="relatedQuestions" inverseEntity="BoneSetCD" syncable="YES"/>
+    </entity>
+    <entity name="QuestionCD" representedClassName="QuestionCD" syncable="YES">
+        <attribute name="questions" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="quizTest" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="QuizTestCD" inverseName="questions" inverseEntity="QuizTestCD" syncable="YES"/>
+    </entity>
+    <entity name="QuizIdentifier" representedClassName="QuizIdentifier" syncable="YES">
+        <attribute name="idQuizTest" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <relationship name="quizTest" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="QuizTestCD" inverseName="quziIdentifier" inverseEntity="QuizTestCD" syncable="YES"/>
+    </entity>
+    <entity name="QuizTestCD" representedClassName="QuizTestCD" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="difficultLevel" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="maxQuestions" optional="YES" attributeType="Integer 32" defaultValueString="0" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="resolutions" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questions" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="QuestionCD" inverseName="quizTest" inverseEntity="QuestionCD" syncable="YES"/>
+        <relationship name="quziIdentifier" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="QuizIdentifier" inverseName="quizTest" inverseEntity="QuizIdentifier" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BoneSetCD" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="BoneSetRelatedQuestions" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="QuestionCD" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="QuizIdentifier" positionX="-333" positionY="-81" width="128" height="73"/>
+        <element name="QuizTestCD" positionX="-585" positionY="27" width="128" height="150"/>
+    </elements>
+</model>
